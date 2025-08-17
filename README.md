@@ -40,5 +40,28 @@ Using **SCD Type 2**, we **keep the history** by storing multiple records for th
 - Hive Metastore
 - Databricks (execution environment)
 
+# 🛒 Superstore Sales Data Engineering Pipeline (Databricks + Delta Lake + AWS S3)
 
-## 📂 Project Structure
+This project demonstrates the **end-to-end data engineering lifecycle** using **Databricks, Spark, Delta Lake, and AWS S3**.  
+
+## 🚀 Steps in the Pipeline
+1. **Data Ingestion** – Load Superstore CSV data into Spark.
+2. **Data Transformation** – Extract Year & Month from `Order Date`.
+3. **Data Storage** – Save data in **Parquet format**.
+4. **Delta Table Creation** – Create `sales_flat` Delta table with schema enforcement.
+5. **Partitioned Table** – Create `sales_partitioned_v3` table partitioned by `Year` and `Month`.
+
+## 🛠️ Tech Stack
+- **Apache Spark (PySpark)**
+- **Databricks**
+- **Delta Lake**
+- **AWS S3**
+
+## 🎯 What This Project Showcases
+- Modern **data engineering practices** (ETL/ELT pipeline).
+- **Delta Lake** features: ACID transactions, schema enforcement, and time travel.
+- **Partitioning** strategy for query optimization.
+- **Cloud integration** with AWS S3.
+
+## 📊 Use Case
+The pipeline supports **business intelligence, sales analytics, and financial reporting** by providing reliable, partitioned, and query-optimized datasets.
