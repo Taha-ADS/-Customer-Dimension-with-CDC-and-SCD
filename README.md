@@ -65,3 +65,36 @@ This project demonstrates the **end-to-end data engineering lifecycle** using **
 
 ## 📊 Use Case
 The pipeline supports **business intelligence, sales analytics, and financial reporting** by providing reliable, partitioned, and query-optimized datasets.
+
+# Customer Segmentation & Lifetime Value with SQL
+
+## 📌 Overview
+This project demonstrates an **ELT pipeline** using SQL to:
+- Clean raw customer and order data.
+- Calculate **Customer Lifetime Value (CLV)**.
+- Segment customers into **Platinum, Gold, Silver** tiers.
+
+## 🛠 Tech Stack
+- SQL (PostgreSQL/MySQL/BigQuery compatible)
+- Mock dataset (customers + orders)
+
+## 📂 Project Structure
+- `schema.sql` → DDL for tables
+- `data.sql` → Sample inserts
+- `etl.sql` → Cleaning, transformations, and final segmentation
+- `README.md` → Project documentation
+
+## 🚀 Key Features
+- Data cleaning (duplicates, NULL handling)
+- Window functions
+- Aggregations & CASE-based segmentation
+- Final customer segments table
+
+## ✅ Business Impact
+Companies can use this pipeline to:
+- Identify high-value customers (Platinum).
+- Build marketing strategies per customer tier.
+- Track customer spending trends over time.
+
+---
+
